@@ -1,21 +1,31 @@
-<header>
-    <h1>This is the base header</h1>
-    <nav>
-        <ul>
-            <li><a href="{% url 'index' %}">Home</a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'events' %}">Events</a></li>
-            <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
-            <li><a href="{% url 'blog' %}">Blog</a></li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<body>
-    (content goes in here)
-    {% block content %}
-    {% endblock %}
-</body>
-<footer>
-    This is the base footer
-</footer>
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Meditation Ascension</title>
+    </head>
+
+    <header>
+        <h1>Meditation Ascension</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'events' %}">Events</a></li>
+                <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+
+    <footer>
+        &copy; copyright 2020. All Rights Reserved.
+    </footer>
+
+</html>
