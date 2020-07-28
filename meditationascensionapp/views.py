@@ -1,28 +1,26 @@
-from django.shortcuts import render
-
-# Create your views here.
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at meditation index.")
+    return render(request, 'meditationascensionapp/index.html')
 
 
 def about(request):
-    return HttpResponse("Hello, world. You're at meditation about.")
+    return render(request, 'meditationascensionapp/about.html')
 
 
 def events(request):
-    return HttpResponse("Hello, world. You're at meditation programs and events.")
+    return render(request, 'meditationascensionapp/events.html')
 
 
 def testimonials(request):
-    return HttpResponse("Hello, world. You're at meditation testimonials.")
+    return render(request, 'meditationascensionapp/testimonials.html')
 
 
 def blog(request):
-    return HttpResponse("Hello, world. You're at meditation blog.")
+    return render(request, 'meditationascensionapp/blog.html')
 
 
 def contact(request):
-    return HttpResponse("Hello, world. You're at meditation contact.")
+    return render(request, 'meditationascensionapp/contact.html')
