@@ -1,4 +1,28 @@
 {% extends 'meditationascensionapp/base.html' %}
+{% load static %}
+
 {% block content %}
-    <h2>Mindfulness and Meditation with May Ghaghda</h2>
+    <div id="main-image">
+        <div id="main-title">Meditation Ascension</div>
+    </div>
+    <style>
+        #main-image {
+            padding-top: 170px;
+            height: 850px;
+            background: linear-gradient(white, transparent, transparent, transparent), url({% static 'meditationascensionapp/photos/bench.jpeg'%}) no-repeat center;
+            background-size: cover;
+        }
+
+        #main-title {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Brush Script MT", Times, serif;
+            color: white;
+            font-size: 10vw;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
 {% endblock %}

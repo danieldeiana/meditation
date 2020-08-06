@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from .models import Testimonial
 
 
 def index(request):
@@ -15,7 +16,11 @@ def events(request):
 
 
 def testimonials(request):
-    return render(request, 'meditationascensionapp/testimonials.html')
+    all_testimonials = Testimonial.objects.all()
+    context = {
+        'all_testimonials': all_testimonials,
+    }
+    return render(request, 'meditationascensionapp/testimonials.html', context)
 
 
 def blog(request):

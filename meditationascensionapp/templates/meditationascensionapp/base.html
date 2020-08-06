@@ -6,22 +6,16 @@
         <title>Meditation Ascension</title>
         <link rel="stylesheet" type="text/css" href="{% static 'meditationascensionapp/style.css' %}">
         <script src="{% static 'meditationascensionapp/script.js' %}"></script>
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-            integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
     </head>
 
     <header>
-        <h1>Meditation Ascension</h1>
-        <nav>
+        <nav class="main_nav">
             <ul>
                 <li><a href="{% url 'index' %}">Home</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="{% url 'events' %}">Events</a></li>
                 <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
-                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <!--<li><a href="{% url 'blog' %}">Blog</a></li>-->
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </nav>

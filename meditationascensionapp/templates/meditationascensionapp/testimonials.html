@@ -1,4 +1,14 @@
 {% extends 'meditationascensionapp/base.html' %}
 {% block content %}
+
     <h2>Testimonials</h2>
+
+    {% for testimonial in all_testimonials %}
+        <div>
+            <p class="testimonial_text">{{ testimonial.text }}</p>
+            <span>{{ testimonial.first_name }}, </span>
+            <span>{{ testimonial.last_name }}</span>
+        </div>
+    {% endfor %}
+
 {% endblock %}
