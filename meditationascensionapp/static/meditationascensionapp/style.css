@@ -1,76 +1,93 @@
-/* #00C2CB */
+  /* -------- */
+ /* MAIN-NAV */
+/* -------- */
 
-
-/* UNIVERSAL STYLES */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-    display: inline;
-}
-
-/* Universal styles for anchor tag */
-a {
-  text-decoration: none;
-}
-
-/* unvisited link */
-a:link {
-  color: black;
-}
-
-/* visited link */
-a:visited {
-  color: black;
-}
-
-/* mouse over link */
-a:hover {
-  color: green;
-}
-
-/* selected link */
-a:active {
-  color: black;
-}
-
-/* -- base.html --*/
-.main_nav {
+#top-bar {
     display: flex;
-    height: 40px;
+    justify-content: space-between;
 }
 
-.main_nav ul li {
-    display: inline-block;
-    width: 120px;
-    padding: 7px;
-    font-size: 20px;
+  /* ---- */
+ /* HOME */
+/* ---- */
+
+#socials {
+    display: flex;
+    align-self: center;
+}
+
+i {
+    font-size: 60px;
+    margin: auto 10px;
+    color: #88CCEE;
+}
+
+#acredit p {
+    font-size: 30px;
     text-align: center;
-    border-radius: 40%;
-    background: #00C2CB;
-    margin: 10px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Satisfy', cursive;
 }
 
-.main_nav ul li:hover {
-    background: #00D3DC;
+#welcome, #a-place {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
 }
 
-.main_nav ul li a {
+#welcome {
+    padding-top: 150px;
+    font-size: 70px;
     color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* -- VIEWS-- */
-
-/* HOME */
-/* SOME STYLING HAS BEEN ADDED DIRECTLY TO THE VIEW HTML TEMPLATE AS DJANGO-STATIC FILES CANNOT BE
-LOADED INTO CSS (as far as I know( without hacking (: )) */
-
-/* TESTIMONIALS */
-.testimonial_text {
-    font-style: italic;
+#a-place {
+    font-size: 40px;
+    color: #C92A5C;
 }
+
+  /* ----------------- */
+ /* H2 WITH UNDERLINE */
+/* ----------------- */
+
+.h2-underline {
+    font-size: 8vw;
+    font-family: 'Satisfy', cursive;
+    color: #C92A5C;
+    margin-bottom: 0;
+
+}
+
+.underline {
+    width: 30%;
+
+}
+
+  /* ------------------------------------ */
+ /* CONSISTENT MAIN-DIV WIDTH AND MARGIN (AND FOOTER FOR NOW) */
+/* ------------------------------------ */
+
+
+#about, #events, footer {
+    margin-left: 10%;
+}
+
+#about div, #events div, footer {
+    width: 90%;
+}
+
+
+  /* ---------- */
+ /* ABOUT PAGE */
+/* ---------- */
+
+#about .subsection img {
+    float: left;
+    padding: 10px 20px;
+}
+
+#about p {
+    font-size: 2.2vw;
+}
+
+  /* ------ */
+ /* EVENTS */
+/* ------ */

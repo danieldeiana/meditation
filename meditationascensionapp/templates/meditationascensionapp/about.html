@@ -1,4 +1,42 @@
 {% extends 'meditationascensionapp/base.html' %}
+{% load static %}
 {% block content %}
-    <h2>About</h2>
+<div id="about">
+    <h2 class="h2-underline">About..</h2>
+    <img class="underline" src="{% static 'meditationascensionapp/photos/line.png' %}">
+    <div class="subsection">
+        <div>
+            <img src="{% static 'meditationascensionapp/photos/profile.png' %}">
+            <p>Thanks for travelling to my website. My background is in corporate events and conferencing where I worked
+            for over 15 years at a variety of organisations. During my career, mindfulness and meditation helped me with
+            workloads and deadlines. The events world is intense and one or the most stressful of industries: I had to
+                manage multiple projects and juggle many plates.</p>
+        </div>
+
+        <div>
+            <img src="{% static 'meditationascensionapp/photos/parrots.png' %}">
+            <p>Meditation had been in my life since childhood, with my Grandmother being my first influence. Although I used to laugh at her practices at the time and thought they were strange.
+            However, having been through interesting relationships and life experiences with many obstacles, I came to
+            a breaking point. It wasn't in my nature to let go easily, I found it very hard to walk away and give up on people,
+                relationships, jobs, friends and family.</p>
+        </div>
+
+
+        <div>
+            <img src="{% static 'meditationascensionapp/photos/yoga.png' %}">
+            <p>I'd experienced this difficulty over and over again until I found that letting things be and going with the flow
+            was the right route for me. I had to release and surrender to what was. Also, pressure from work and life in
+            general meant my health was suffering: I had digestion problems, asthma, and an under-active thyroid, which made me
+                put on weight.</p>
+        </div>
+        <div>
+            <img src="{% static 'meditationascensionapp/photos/mind.png' %}">
+            <p>My body needed a rest. After I started yoga classes, I began to notice what my mind was doing while
+            in the various postures. I began hot yoga a few years later - a moving meditation - which led me to the journey
+            of meditating which gave me life altering experiences. I started to attend mindfulness retreats and it was there I met
+                like-minded people who supported me to continue to meditate.</p>
+        </div>
+
+    </div>
+</div>
 {% endblock %}

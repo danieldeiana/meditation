@@ -1,5 +1,13 @@
 {% extends 'meditationascensionapp/base.html' %}
 {% block content %}
+
+    <p>Suscribe to my newsletter!</p>
+    <form action="/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+
     <h2>Contact</h2>
     <h3>Email: may@meditationascension....</h3>
     <h3>Contact number: 07375 856 560</h3>

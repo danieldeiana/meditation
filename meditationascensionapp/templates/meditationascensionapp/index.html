@@ -1,28 +1,34 @@
 {% extends 'meditationascensionapp/base.html' %}
 {% load static %}
 
+<!-- url({% static 'meditationascensionapp/photos/bench.jpeg'%}) -->
+
+{% block above_header %}
+    <div id="top-bar">
+        <img src="{% static 'meditationascensionapp/photos/parrots.png' %}">
+        <div id="acredit">
+            <p>I'm certified and accredited by Ascents and a member of the British School of meditation register,
+            your mindfulness and meditation coach</p>
+        </div>
+        <div id="socials">
+            <a href="/facebook_link"><i class="fab fa-facebook"></i></a>
+            <a href="instagram_link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
-    <div id="main-image">
-        <div id="main-title">Meditation Ascension</div>
+    <div id="main-picture">
+        <p id="welcome">Welcome to Meditation Ascension</p>
+        <p id="a-place">A place to learn about mindfulness and meditation</p>
     </div>
     <style>
-        #main-image {
-            padding-top: 170px;
-            height: 850px;
+        #main-picture {
             background: linear-gradient(white, transparent, transparent, transparent), url({% static 'meditationascensionapp/photos/bench.jpeg'%}) no-repeat center;
             background-size: cover;
-        }
-
-        #main-title {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: "Brush Script MT", Times, serif;
-            color: white;
-            font-size: 10vw;
-            overflow: hidden;
-            white-space: nowrap;
+            width: 100%;
+            height: 800px;
         }
     </style>
+
 {% endblock %}

@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         {% load static %}
         <title>Meditation Ascension</title>
         <link rel="stylesheet" type="text/css" href="{% static 'meditationascensionapp/style.css' %}">
         <script src="{% static 'meditationascensionapp/script.js' %}"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+              integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+              crossorigin="anonymous"/>
     </head>
 
     <header>
-        <nav class="main_nav">
+        {% block above_header %}
+        {% endblock %}
+
+        <nav id="desktop-nav">
             <ul>
                 <li><a href="{% url 'index' %}">Home</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="{% url 'events' %}">Events</a></li>
                 <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
-                <!--<li><a href="{% url 'blog' %}">Blog</a></li>-->
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </nav>
+        <!-- Styles for nav, unable to load static in css where the photo is stored.. for the link background-->
+        <style>
+            #desktop-nav {
+                margin: 50px;
+                }
+
+            #desktop-nav ul {
+                display: flex;
+                justify-content: space-around;
+                }
+
+            #desktop-nav ul li {
+                list-style-type: none;
+            }
+
+            #desktop-nav ul li a {
+                background:
+                    url({% static 'meditationascensionapp/photos/crayon.png' %}) no-repeat center;
+                text-decoration: none;
+                padding: 40px 50px;
+                color: white;
+                font-family: 'Sniglet', cursive;
+                font-size: 20px;
+                }
+        </style>
     </header>
 
     <body>
@@ -29,5 +60,4 @@
     <footer>
         &copy; copyright 2020. All Rights Reserved.
     </footer>
-
 </html>
